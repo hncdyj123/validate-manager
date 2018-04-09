@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<actionValidators>
+	<actionValidator actionUrl="/user/validate">
+		<param name="userName" validate="String" type="" isnull="N" />
+		<param name="mobile" validate="String" type="mobile" isnull="N" msg="请输入正确手机号码!" />
+	</actionValidator>
+</actionValidators>
+
+<!-- actionValidator 节点说明 -->
+<!-- **** actionUrl 要拦截的url **** -->
+<!-- **** reference 要引用的验证规则,可以定义一个公共的验证规则来引用  **** -->
+<!-- param 节点说明 -->
+<!-- **** name 需要验证的参数名 **** -->
+<!-- **** validate 需要验证的类型 **** -->
+<!-- **** type 需要验证的正则表达式(内置：mobile，email，chinese等，详见Constants) **** -->
+<!-- **** isnull 需要验证的是否可以为空 Y是 N否 **** -->
+<!-- **** msg 需要验证的参数的返回消息 非必须，不写调用系统内置验证消息**** -->
